@@ -1,1 +1,36 @@
+FIS 1220 Tarea 4:
+Oriana Labrin
 
+Comandos usados:
+Primero cree una carpeta Tarea4 que use como repositorio, usando:
+$ git init
+
+Luego, cree dos archivos con extension .py: 
+nano operaciones.py
+nano diccionario.py
+
+Dentro de operaciones.py realice las 5 operaciones usando las instrucciones vistas en clases y que se encuentran en el archivo en el repositorio, todo en funcion de que pueda correr en python.
+Igualmente para diccionario.py realice una lista de alumos, y notas correspondientes para cada uno, pero solo imprimi el nombre y las notas del Alumno1.
+
+Con el comando git status puedo revisar el estatus de mi repositorio:
+$ git status
+
+Se observa que los archivos estan listos para agregar, asi que usamos el comando para cada archivo.
+
+$ git add operaciones.py
+$ git add diccionario.py
+
+Revisamos el estado del repositorio, y nos indica que esta listo para hacer commit.
+
+git commit -m 'correccion'
+
+Procedemos a vincular el repositorio con un repositorio previamente creado en GitHub.
+
+$ git remote add origin https://github.com/OrianaLabrin/Tarea4.git
+
+y subimos los cambios:
+
+$ git push -u origin master
+
+Efectivamente los cambios estan en Github.
+Ahora solo queda correr los archivos en python, los cuales se ejecutaron correctamente.
